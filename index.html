@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Towards Automatic Soccer Commentary Generation with Knowledge-Enhanced Visual Reasoning</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Towards Automatic Soccer Commentary Generation with Knowledge-Enhanced Visual Reasoning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <span class="author-block">Anonymous</span>
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span> -->
+                  </div>
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+      </div>
+    </div>      
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/overview.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        The proposed system, called GameSight, incorporates visual and contextual information to generate soccer commentary that is entity-aligned and knowledge-enhanced.      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Soccer commentary plays a crucial role in enhancing the soccer game viewing experience for audiences. The automatic soccer commentary generation task, however, presents a challenge to the comprehensive narrative that integrates both coarse-grained event detection and fine-grained factual detail references. Previous studies typically adopt an end-to-end method that generates anonymous, context-free, and descriptive commentaries to explicate the game events. Such generated commentaries are clearly unnatural, as they lack the fine-grained visual and contextual information that human commentators possess for further insights. To bridge the gap, we propose GameSight, a two-stage model to address soccer commentary generation as a knowledge-enhanced visual reasoning task, enabling knowledgeable commentary with accurate reference to entities (players and teams). GameSight starts by performing visual reasoning to align anonymous entities with contextual background and fine-grained view shots analysis. Subsequently, the entity-aligned commentary is refined with knowledge by incorporating external historical statistics and iteratively updated internal game state information. Consequently, GameSight improves the player alignment accuracy by 26.8% on SN-Caption-test-align dataset compared to Gemini 2.0 Flash-Lite. Combined with further knowledge enhancement, GameSight outperforms in both local scale (segment-level) statistical accuracy and global scale (game-level) contextual relevance and structural composition. We believe that our work paves the way for a more informative and engaging human-centric experience with the AI sports application.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Teaser video-->
+<br>
+<br>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Framework</h2>
+      </div>
+    </div>    
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser.mp4" type="video/mp4">
+      </video>
+        <h2 class="subtitle has-text-centered">
+        Unlike previous end-to-end models, GameSight is a two-stage system that addresses soccer commentary generation as a knowledge-enhanced visual reasoning task. It corrects and refines the anonymized commentary with Stage I: visual reasoning for entity alignment, and Stage II: commentary refinement with knowledge.</h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Stage I: Visual Reasoning for Entity Alignment</h2>
+
+      <h3 class="subtitle is-4"><br><strong>1. Experimental Results on Accuracy of Entity Alignment</strong></h3>
+      <div class="experiment-section mt-5">
+        <figure class="image" style="margin: 0 auto;">
+          <img src="static/images/experiment 1.png" alt="Image A">
+        </figure>
+        <p class="caption mt-2"><strong>Left: (Exp.3) Human reliance for the “Player Guessing” game.</strong> Human participants have an accuracy of 73.3%, among which 84.5% of the correct identifications can be made through various cues other than long view player tracking, indicating the necessity of involving fine-grained visual and contextual information in player alignment.
+          <br><strong>Right: (Exp.2) Ablation test on the contextual and visual components.</strong> Most components contributes to the visual reasoning task positively, while the KetEvent Timeline component is excluded in the following entity alignment experiments. (Sorry for the formatting issue in the original table. The corrected version is shown above.)</p>
+
+        <figure class="image" style="margin: 0 auto; margin-top: 20px;">
+          <img src="static/images/experiment 2.png" alt="Image B">
+        </figure>
+        <p class="caption mt-2"><strong>Left: (Exp.4) Zero-shot test on the video-LMMs and LLMs.</strong> LLMs fall shorts of video-LMMs in this visual reasoning task, indicating the importance of involving visual modality to further observe the related scene. Qwen2.5-VL serves as the superior backbone for further fine-tuning.
+          <br><strong>Right: (Exp.5) Fine-tuning on Qwen2.5-VL.</strong> The synergy between SFT and GRPO proves crucial for addressing the multifaceted challenges of visual reasoning in video-LMMs, improving the player alignment accuracy by 26.8% on SN-Caption-test-align dataset compared to Gemini 2.0 Flash-Lite.</p>
+      </div>
+
+      <h3 class="subtitle is-4"><br><strong>2. Case Study in Frame-Level Event Grounding Guidance</strong></h3>
+
+      <div class="columns is-vcentered is-multiline" style="width: 90%; margin: 0 auto;">
+      
+        <!-- Column for Sample A -->
+        <div class="column is-half">
+          <div class="box has-text-centered">
+            <!-- Video A -->
+            <video controls style="width: 100%; max-width: 100%;">
+              <source src="static/videos/frame_weight_2_43_36.mp4" type="video/mp4">
+            </video>
+      
+            <!-- Caption A -->
+            <p class="mt-4 mb-2">
+              <strong>Test set sample:</strong> [PLAYER] ([TEAM]) gets on the end of a pass on the edge of the box but his shot is blocked.
+            </p>
+      
+            <!-- Image A -->
+            <figure class="image is-inline-block" style="width: 80%;">
+              <img src="static/videos/frame_weight_2_43_36.png" alt="Image A" style="width: 100%; height: auto;">
+            </figure>
+          </div>
+        </div>
+      
+        <!-- Column for Sample B -->
+        <div class="column is-half">
+          <div class="box has-text-centered">
+            <!-- Video B -->
+            <video controls style="width: 100%; max-width: 100%;">
+              <source src="static/videos/frame_weight_1_19_51.mp4" type="video/mp4">
+            </video>
+      
+            <!-- Caption B -->
+            <p class="mt-4 mb-2">
+              <strong>Train set sample:</strong> [PLAYER] ([TEAM]) goes over to take the corner kick and it looks like he will swing the ball into the penalty box.
+            </p>
+      
+            <!-- Image B -->
+            <figure class="image is-inline-block" style="width: 80%;">
+              <img src="static/videos/frame_weight_1_19_51.png" alt="Image B" style="width: 100%; height: auto;">
+            </figure>
+          </div>
+        </div>
+      
+      </div>
+      
+    </div>
+
+    
+      <!-- Two-column merged table -->
+      <div class="mt-5" style="width: 80%; margin: 0 auto;">
+        <h3 class="subtitle is-4"><br><strong>3. Case Study in Visual Reasoning for Entity Alignment</strong></h3>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th class="has-text-centered">Video & Anonymized Commentary</th>
+              <th class="has-text-centered">Visual Reasoning for Entity Alignment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <video controls width="100%" class="mb-2">
+                  <source src="static/videos/agr_1_1_16_47.mp4" type="video/mp4">
+                </video>
+                <div>[PLAYER] ([TEAM]) gets a shot away from around 24 metres out after his fine solo run. The ball went just wide of the right post!<br><br><span style="color: green;">(A good case by analyzing close view recognized face with player role.)</span></div>
+              </td>
+              <td>Step 1: Video Grounding
+                <br>The commentary event is described as occurring around 16:17 to 16:29 seconds in the video. The event involves a player from Barcelona taking a shot that goes wide of the goalpost. This suggests we need to focus on the Barcelona team's actions during this time frame.
+                <br><br>Step 2: Analyze the Attack and Defense Sides
+                <br>Given that the shot was taken by a Barcelona player, we need to identify who among their players fits the description of taking a shot. The Barcelona team has several attackers, including Lionel Messi (jersey number 10), Neymar (jersey number 11), and Luis Suarez (jersey number 9). Since the shot was taken from around 24 meters out, it is likely an attacking midfielder or forward who has possession and takes the shot.
+                <br><br>Step 3: Identify the Player Involved
+                <br>In the video, we see a player in a blue and red jersey (Barcelona) dribbling the ball towards the goal. This player is Neymar, as indicated by the close-up view showing his face and jersey number 11. The player's movement and positioning align with the description of taking a shot from a distance.
+                <br><br>Step 4: Context Knowledge Analysis
+                <br>From the history_timeline, we know that Lionel Messi was involved in an offside situation earlier. However, there is no direct evidence linking him to the shot described in the commentary. The close-up view of Neymar confirms his involvement in the event, as he is the only player from Barcelona seen in the close-up view during the relevant time frame.
+                <br><br>Final Deduction
+                <br>Based on the analysis, the player who took the shot and is mentioned in the commentary is Neymar from Barcelona.
+                <br><br>{ "video_grounding": "16:17 - 16:29", "team": "Barcelona", "player_hash": "jNOPwl3h" ,  "player_name": "Neymar"}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <video controls width="100%" class="mb-2">
+                  <source src="static/videos/frame_weight_2_43_36.mp4" type="video/mp4">
+                </video>
+                <div>PLAYER] ([TEAM]) gets on the end of a pass on the edge of the box but his shot is blocked.<br><br><span style="color: green;">(A good case by observation in the long view and analyzing history timeline.)</span></div>
+              </td>
+              <td>Step 1: Video Grounding
+                <br>The commentary event is described as occurring around 15-17 seconds in the video. This is where the shot attempt is mentioned, and we need to focus on the scene around this time.
+                <br><br>Step 2: Analyze the Attack and Defense Sides
+                <br>The commentary mentions a "shot attempt" by a player from the home team, Paris SG. Given that Paris SG is playing against Arsenal, the attacking side would be Paris SG, and the defending side would be Arsenal. Therefore, the player who attempts the shot is more likely to be from Paris SG.
+                <br><br>Step 3: Identify the Player Involved
+                <br>In the video, around 15-17 seconds, there is a player in a blue jersey (Paris SG) who appears to be involved in an attacking play. This player is seen running towards the goal area with the ball. His jersey number is visible as 22, and his name is Jese, which matches the information given in the history_timeline.
+                <br><br>Step 4: Context Knowledge Analysis
+                <br>From the history_timeline, we know that Jese has been substituted into the game. This suggests he is actively participating in the match and is likely to be involved in significant plays, such as attempting shots on goal.
+                <br><br>Conclusion 
+                <br>Based on the analysis, the player who conducted the shot attempt is Jese from Paris SG. His jersey number is 22, and his name is clearly identifiable in the video.
+                <br><br>{"video_grounding": "15-17",  "team": "Paris SG",  "player_hash": "6BdSXunk", "player_name": "Jese"}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <video controls width="100%" class="mb-2">
+                  <source src="static/videos/agr_3_2_42_53.mp4" type="video/mp4">
+                </video>
+                <div>Poor challenge! [PLAYER] ([TEAM]) is penalised for tripping and [REFEREE] blows his whistle. [TEAM] win a free kick. It's a promising situation for a direct shot.<br><br><span style="color: green;">(A good case by analyzing close view recognized face with player role.)</span></div>
+              </td>
+              <td>Step 1: Video Grounding
+                <br>The commentary event is described as occurring around 14 19 21 27 29 seconds in the video. The closest grounded view to this time frame is around 22.52 seconds, where we see a close-up of a player wearing a white jersey.
+                <br><br>Step 2: Analyze the Attack and Defense Sides
+                <br>Given the context of the commentary, it mentions a foul that results in a free kick for the home team, Granada CF. This suggests that the player who committed the foul was likely from the opposing team, Real Madrid. The close-up view shows a player in a white jersey, which aligns with the away team's uniform.
+                <br><br>Step 3: Identify the Player Involved
+                <br>In the close-up view at 22.52 seconds, the player is wearing a white jersey. This player is identified as Pepe, who plays as a defender for Real Madrid. The close-up view confirms his identity, and he is the only player from Real Madrid visible in the close-up shots.
+                <br><br>Step 4: Context Knowledge Analysis
+                <br>The history_timeline indicates that a player from Real Madrid picked up a long through ball, but another player from the same team intercepted it. This suggests that players from Real Madrid were actively involved in the play leading up to the event. The close-up view of Pepe further supports his involvement in the event.
+                <br><br>Final Deduction
+                <br>Based on the close-up view and the context provided, the player who committed the foul is Pepe from Real Madrid.
+                <br><br>{ "video_grounding": "22.52s", "team": "Real Madrid", "player_hash": "2y9qaipI",  "player_name": "Pepe"}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <video controls width="100%" class="mb-2">
+                  <source src="static/videos/agr_4_1_42_27.mp4" type="video/mp4">
+                </video>
+                <div>One of the defenders reacts at the last minute to brilliantly block a pass from [PLAYER] ([TEAM]).<br><br><span style="color: rgb(180, 4, 4);">(A bad case with wrong deduction.)</span></div>
+              </td>
+              <td>Step 1: Video Grounding
+                <br>The commentary event is described as occurring at around 14 15 16 29 seconds in the video. This suggests we need to focus on the scene where a defender reacts to block a pass from a player named [PLAYER].
+                <br><br>Step 2: Analyze the Attack and Defense Sides
+                <br>Given that the event involves a defender blocking a pass, it's logical to look at the attacking side (Dortmund) and the defending side (Bayer Leverkusen). Since the defender is from Bayer Leverkusen, we need to identify who among their players fits the description of making a pass.
+                <br><br>Step 3: Identify the Player Involved
+                <br>In the video, we see a player in a red jersey (Bayer Leverkusen) passing the ball. The player's jersey number and name are visible, and he appears to be the one making the pass. The close-up view confirms that the player is indeed from Bayer Leverkusen, as indicated by the jersey color and design.
+                <br><br>Step 4: Context Knowledge Analysis
+                <br>From the history_timeline, we know that [PLAYER_O0EKKpNQ] received a yellow card for dissent. The player's role as a midfielder suggests he could be involved in passing the ball.
+                <br><br>Final Deduction
+                <br>Based on the visual cues and the context provided, the player who made the pass and was blocked by a defender is identified as O0EKKpNQ from Bayer Leverkusen.
+                <br><br>{ "video_grounding": "14 15 16 29", "team": "Bayer Leverkusen", "player_hash": "O0EKKpNQ" , "player_name": "Chicharito"}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Stage II: Commentary Refinement with Knowledge</h2>
+
+      <h3 class="subtitle is-4"><br><strong>1. Evaluation of Commentary Refinement</strong></h3>
+      <div class="experiment-section mt-5">
+        <figure class="image">
+          <img src="static/images/experiment 4.png" alt="Image A" style="max-width: 100%; height: auto;">
+        </figure>        
+        <p class="caption mt-2"><strong>(Exp.6) Knowledge reference accuracy.</strong> GameSight presents high accuracy when referring to both external and internal knowledge.</p>
+      </div>
+      <div class="experiment-section mt-5">
+        <figure class="image" style="margin: 0 auto;">
+          <img src="static/images/experiment 3.png" alt="Image A">
+        </figure>
+        <p class="caption mt-2"><strong>Left: (Exp.7) Quantitative results in commentary analysis.</strong> GameSight provides not only contextually related, but also vivid and engaging commentary with knowledge-enhanced visual reasoning.
+          <br><strong>Right: (Exp.8) Commentary structural composition.</strong> Gamesight provides similar structural composition with professional live televised commentary by adding insightful explanations and comments.</p>
+      </div>
+
+      <h3 class="subtitle is-4"><br><strong>2. Case Study in Knowledge-Enhanced Commentary</strong></h3>
+      <h3 class="subtitle is-4"><span style="color: green;">Good Cases</span></h3>
+     <!-- Two-column text table -->
+     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth mt-4">
+      <thead>
+        <tr>
+          <th class="has-text-centered">Entity-Aligned Commentary <br>(MatchTime Dataset)</th>
+          <th class="has-text-centered">Knowledge-Enhanced Commentary <br>(GameSight)</th>
+        </tr>
+      </thead>    
+      <tbody>
+        <tr>
+          <td>Edinson Cavani (Paris SG) times his run too early and the linesman raises his flag for offside.</td>
+          <td>In the 52nd minute of the match, Edinson Cavani times his run too early, and the linesman raises his flag for offside. It’s a frustrating moment for the Paris SG forward, who has already found the net twice in this UEFA Champions League season. The away team will be hoping to capitalize on their attacking efforts as they trail 2-1 against Arsenal here at the Emirates Stadium.</td>
+        </tr>
+        <tr>
+          <td>Lucas (Paris SG) takes a mid-range free kick and his stunning strike crashes against the crossbar.</td>
+          <td>Lucas Moura steps up for a mid-range free kick, showcasing his trademark technique! He strikes it brilliantly, but it crashes against the crossbar, sending shockwaves through the Emirates Stadium. Paris SG is putting the pressure on Arsenal, as Lucas looks to add to his three goals this season. The score remains 1-1 here in the second half!</td>
+        </tr>
+        <tr>
+          <td>Willian (Chelsea) takes the resulting corner which is well defended. Chelsea will take a corner kick.</td>
+          <td>Willian steps up to take the corner for Chelsea after a well-defended sequence. They’ve been pressing hard, looking to extend their lead. The current score stands at 2-1 in favor of the visitors. The last corner was also for Chelsea, but they’ll look to make this one count at Carrow Road. Let’s see how Norwich’s defense responds!</td>
+        </tr>
+        <tr>
+          <td>Grzegorz Krychowiak (Sevilla) brings an opponent down and Svein Moen interrupts the game.</td>
+          <td>Grzegorz Krychowiak brings down an opponent, and referee Svein Moen swiftly halts play. It’s a strategic foul from the Sevilla midfielder as they look to regain control of the game. We’re now at 33 minutes and 38 seconds into the second half, with Sevilla trailing 1-3 against Manchester City. Krychowiak, who has already received a yellow card earlier, will need to be cautious for the remainder of the match.</td>
+        </tr>
+        <tr>
+          <td>Ramires (Chelsea) fouls his opponent and receives a yellow card from the referee, but he is clearly not happy with the decision.</td>
+          <td>As we approach the closing stages of the first half, Ramires from Chelsea commits a foul, much to his dismay, and is issued a yellow card by the referee. The Brazilian midfielder clearly disagrees with the decision as he gestures his frustration. Meanwhile, Southampton has already received two yellow cards in this match, with Ryan Bertrand and Sadio Mane already cautioned. The tension is palpable as Chelsea leads 1-0 following Willian’s early free-kick goal.</td>
+        </tr>
+        <tr>
+          <td>Franck Ribery (Bayern Munich) is shown a yellow card by the referee.</td>
+          <td>As we approach the midway point of the second half, Franck Ribery has just received a yellow card for Bayern Munich after a late challenge. This adds to the growing tension in this highly contested match at Signal Iduna Park, with Dortmund leading 1-0 following Pierre-Emerick Aubameyang’s opening goal in the first half. Ribery’s booking could have significant implications as both teams battle for control. This marks the third yellow card of the match, with Adrian Ramos and Marc Bartra already cautioned for Dortmund. The stakes are high as we inch closer to the final whistle.</td>
+        </tr>
+        <tr>
+          <td>Juanmi (Malaga) scores a goal! A perfectly produced cross puts him one-on-one with the goalkeeper and he plants a brilliant header down in the middle of the net, leaving the goalkeeper beaten!</td>
+          <td>Juanmi has found the back of the net for Malaga! At the 70th minute, a perfectly timed cross allows him to break free one-on-one with Iker Casillas. The young forward rises above the defenders to deliver a brilliant header down into the center of the goal, leaving the Real Madrid keeper with no chance. This goal comes as Malaga seeks to fight back after being two goals down. The score now stands at 2-1, and the home crowd at the Santiago Bernabéu is stunned!</td>
+        </tr>   
+      </tbody>
+    </table>
+
+    <!-- Two-column text table -->
+      <h3 class="subtitle is-4"><br><span style="color: rgb(180, 4, 4);">Bad Cases</span></h3>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth mt-4">
+      <thead>
+        <tr>
+          <th class="has-text-centered">Entity-Aligned Commentary <br>(MatchTime Dataset)</th>
+          <th class="has-text-centered">Knowledge-Enhanced Commentary <br>(GameSight)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matthias Ginter (Dortmund) can’t expect anything else than a yellow card for his hard tackle. And a yellow it is. Manuel Grafe didn’t think twice about pulling it out of his pocket.</td>
+          <td>Matthias Ginter of Dortmund has been booked, receiving a yellow card for a robust challenge. Referee Manuel Grafe didn’t hesitate to brandish the card, a clear indication of the game’s growing physicality. This marks another disciplinary action in what has been a fiercely contested encounter, <strong>with Leverkusen already having three yellow cards to their name</strong>. The score remains 1-0 to Bayer Leverkusen as we approach the half-time mark. <br><strong>(Forth yellow cards)</strong></td>
+        </tr>        
+        <tr>
+          <td>The game is interrupted as Cristiano Ronaldo (Real Madrid) is flagged offside.</td>
+          <td>The game takes a brief pause as Cristiano Ronaldo is caught offside, just as Real Madrid was looking to capitalize on their significant lead here at the Santiago Bernabéu. With the score at 4-1 and about a minute to go until halftime, the home side has controlled the play and </strong>maintains 62% possession</strong>. This offside decision serves as a reminder for Madrid to be mindful of their positioning as they continue to push for more goals. <br><strong>(Hallucination, we don’t have ball possession information.)</strong></td>
+        </tr>
+        <tr>
+          <td>Arjen Robben (Bayern Munich) delivers a low pass into the box which is intercepted. The referee and his assistant both point at the corner flag. Bayern Munich will have an opportunity to threaten the opposition’s goal.</td>
+          <td>Arjen Robben weaves into the box and delivers a low pass towards the goal, but it’s intercepted by the FC Köln defense. However, the referee swiftly points to the corner flag—Bayern Munich will have a corner kick, <strong>their fifth of the match so far</strong>. With the score at 1-0, Bayern is looking to further capitalize on their attacking momentum here at the Allianz Arena. <br><strong>(Sixth corner kicks.)</strong></td>
+        </tr>
+        <tr>
+          <td>Goal! Neymar (Barcelona) slams home the penalty with a precise shot which goes inside the right post.</td>
+          <td>And there it is! Goal! Neymar steps up to take the penalty and finishes with tremendous precision, slamming the ball home just inside the right post. That’s a crucial strike for Barcelona as they extend their lead to <strong>4-1</strong> against Paris SG. The home crowd at Camp Nou erupts! This is Neymar’s second goal of the match, following his earlier stunning free kick. Just what Barcelona needed as they push for a commanding victory in this Champions League clash! <br><strong>(Score should be updated to 5-1.)</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
