@@ -108,7 +108,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Soccer commentary plays a crucial role in enhancing the soccer game viewing experience for audiences. The automatic soccer commentary generation task, however, presents a challenge to the comprehensive narrative that integrates both coarse-grained event detection and fine-grained factual detail references. Previous studies typically adopt an end-to-end method that generates anonymous, context-free, and descriptive commentaries to explicate the game events. Such generated commentaries are clearly unnatural, as they lack the fine-grained visual and contextual information that human commentators possess for further insights. <strong>To bridge the gap, we propose GameSight, a two-stage model to address soccer commentary generation as a knowledge-enhanced visual reasoning task, enabling knowledgeable commentary with accurate reference to entities (players and teams).</strong>  GameSight starts by performing visual reasoning to align anonymous entities with contextual background and fine-grained view shots analysis. Subsequently, the entity-aligned commentary is refined with knowledge by incorporating external historical statistics and iteratively updated internal game state information. Consequently, <strong> GameSight improves the player alignment accuracy by 26.8% on SN-Caption-test-align dataset compared to Gemini 2.0 Flash-Lite.</strong> Combined with further knowledge enhancement,<strong> GameSight outperforms in both local scale (segment-level) statistical accuracy and global scale (game-level) contextual relevance and structural composition.</strong> We believe that our work paves the way for a more informative and engaging human-centric experience with the AI sports application.          </p>
+            Soccer commentary plays a crucial role in enhancing the soccer game viewing experience for audiences. Previous studies in automatic soccer commentary generation typically adopt an end-to-end method to generate anonymous <i>live text commentary</i>. Such generated commentary is insufficient in the context of real-world <i>live televised commentary</i>, as it contains anonymous entities, context-dependent errors and lacks statistical insights of the game events.<strong>To bridge the gap, we propose GameSight, a two-stage model to address soccer commentary generation as a knowledge-enhanced visual reasoning task, enabling live-televised-like knowledgeable commentary with accurate reference to entities (players and teams).</strong> GameSight starts by performing visual reasoning to align anonymous entities with fine-grained visual and contextual analysis. Subsequently, the entity-aligned commentary is refined with knowledge by incorporating external historical statistics and iteratively updated internal game state information. Consequently, <strong>GameSight improves the player alignment accuracy by 18.5% on SN-Caption-test-align dataset compared to Gemini 2.5-pro</strong>. Combined with further knowledge enhancement, <strong>GameSight outperforms in segment-level accuracy and commentary quality, as well as game-level contextual relevance and structural composition.</strong> We believe that our work paves the way for a more informative and engaging human-centric experience with the AI sports application. <strong>All source code required for conducting and analyzing the experiments will be made publicly available upon publication of the paper.</strong>         </p>
         </div>
       </div>
     </div>
@@ -152,17 +152,17 @@
         <figure class="image" style="margin: 0 auto;">
           <img src="static/images/experiment 1.png" alt="Image A">
         </figure>
-        <p class="caption mt-2"><strong>Left: (Exp.3) Human reliance for the “Player Guessing” game.</strong> Human participants have an accuracy of 73.3%, among which 84.5% of the correct identifications can be made through various cues other than long view player tracking, indicating the necessity of involving fine-grained visual and contextual information in player alignment.
-          <br><strong>Right: (Exp.2) Ablation test on the contextual and visual components.</strong> Most components contributes to the visual reasoning task positively, while the KetEvent Timeline component is excluded in the following entity alignment experiments. (Sorry for the formatting issue in the original table. The corrected version is shown above.)</p>
+        <p class="caption mt-2"><strong>Left (Sec.4.1): Human reliance for the “Player Guessing” game.</strong> Human participants have an accuracy of 96.3%, among which 84.5% of the correct identifications can be made through various cues other than long view player tracking, indicating the necessity of involving fine-grained visual and contextual information in player alignment.
+          <br><strong>Right: (Appendix C.2) Ablation test on the contextual and visual components.</strong> Most components contributes to the visual reasoning task positively, while the KetEvent Timeline component is excluded in the following entity alignment experiments.</p>
 
         <figure class="image" style="margin: 0 auto; margin-top: 20px;">
           <img src="static/images/experiment 2.png" alt="Image B">
         </figure>
-        <p class="caption mt-2"><strong>Left: (Exp.4) Zero-shot test on the video-LMMs and LLMs.</strong> LLMs fall shorts of video-LMMs in this visual reasoning task, indicating the importance of involving visual modality to further observe the related scene. Qwen2.5-VL serves as the superior backbone for further fine-tuning.
-          <br><strong>Right: (Exp.5) Fine-tuning on Qwen2.5-VL.</strong> The synergy between SFT and GRPO proves crucial for addressing the multifaceted challenges of visual reasoning in video-LMMs, improving the player alignment accuracy by 26.8% on SN-Caption-test-align dataset compared to Gemini 2.0 Flash-Lite.</p>
+        <p class="caption mt-2"><strong>Left: (Exp.1) Zero-shot test on the video-LMMs and LLMs.</strong> LLMs fall shorts of video-LMMs in this visual reasoning task, indicating the importance of involving visual modality to further observe the related scene. Qwen2.5-VL serves as the superior backbone for further fine-tuning.
+          <br><strong>Right: (Exp.2) Fine-tuning on Qwen2.5-VL.</strong> The synergy between SFT and GRPO proves crucial for addressing the multifaceted challenges of visual reasoning in video-LMMs, improving the player alignment accuracy by 18.5% on SN-Caption-test-align dataset compared to Gemini 2.5-pro.</p>
       </div>
 
-      <h3 class="subtitle is-4"><br><strong>2. Case Study in Frame-Level Event Grounding Guidance</strong></h3>
+      <h3 class="subtitle is-4"><br><strong>2. Case Study in Frame-Level Event Grounding Guidance (Appendix C.1)</strong></h3>
 
       <div class="columns is-vcentered is-multiline" style="width: 90%; margin: 0 auto;">
       
@@ -323,14 +323,15 @@
         <figure class="image">
           <img src="static/images/experiment 4.png" alt="Image A" style="max-width: 100%; height: auto;">
         </figure>        
-        <p class="caption mt-2"><strong>(Exp.6) Knowledge reference accuracy.</strong> GameSight presents high accuracy when referring to both external and internal knowledge.</p>
+        <p class="caption mt-2"><strong>Left: (Exp.3) Commentary generation baseline comparison.</strong> GameSight shows competitive results using live text as GT, and outperforms others when using live televised as GT, showing a better alignment to the human-centric TV commentary.
+        <br><strong>Right: (Exp.5) Quantitative results in commentary analysis.</strong> GameSight provides not only contextually related, but also vivid and engaging commentary with knowledge-enhanced visual reasoning.</p>
       </div>
       <div class="experiment-section mt-5">
         <figure class="image" style="margin: 0 auto;">
           <img src="static/images/experiment 3.png" alt="Image A">
         </figure>
-        <p class="caption mt-2"><strong>Left: (Exp.7) Quantitative results in commentary analysis.</strong> GameSight provides not only contextually related, but also vivid and engaging commentary with knowledge-enhanced visual reasoning.
-          <br><strong>Right: (Exp.8) Commentary structural composition.</strong> Gamesight provides similar structural composition with professional live televised commentary by adding insightful explanations and comments.</p>
+        <p class="caption mt-2"><strong>Left: (Exp.4) Knowledge reference accuracy.</strong> GameSight presents high accuracy when referring to both external and internal knowledge.
+          <br><strong>Right: (Exp.6) Commentary structural composition.</strong> Gamesight provides similar structural composition with professional live televised commentary by adding insightful explanations and comments.</p>
       </div>
 
       <h3 class="subtitle is-4"><br><strong>2. Case Study in Knowledge-Enhanced Commentary</strong></h3>
