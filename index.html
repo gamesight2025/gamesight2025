@@ -55,20 +55,37 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <span class="author-block">Anonymous</span>
-                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <div class="is-size-5 publication-authors">
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span> -->
+                    <a href="https://github.com/jessyjinzy">Zeyu Jin</a><sup>1,2</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://chengcheng-qin.github.io/">Xiaoyu Qin</a><sup>1,*</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://github.com/songtoy">Songtao Zhou</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    Kaifeng Yun<sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    Jia Jia<sup>1,2,*</sup>
+                  </span>
+                </div>
+                
+                <!-- 机构信息 -->
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>Department of Computer Science and Technology, Tsinghua University,</span>
+                  <br>
+                  <span class="author-block"><sup>2</sup>BNRist, Tsinghua University</span>
+                </div>
+              
+                
+                <!-- 注释：通讯作者 -->
+                <div class="is-size-6 publication-authors">
+                  <span class="eql-cntrb"><small><sup>*</sup>Corresponding Author</small></span>
+                </div>
                   </div>
-
-                  <!-- <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div> -->
-
                 </a>
               </span>
             </div>
@@ -108,7 +125,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Soccer commentary plays a crucial role in enhancing the soccer game viewing experience for audiences. Previous studies in automatic soccer commentary generation typically adopt an end-to-end method to generate anonymous <i>live text commentary</i>. Such generated commentary is insufficient in the context of real-world <i>live televised commentary</i>, as it contains anonymous entities, context-dependent errors and lacks statistical insights of the game events.<strong>To bridge the gap, we propose GameSight, a two-stage model to address soccer commentary generation as a knowledge-enhanced visual reasoning task, enabling live-televised-like knowledgeable commentary with accurate reference to entities (players and teams).</strong> GameSight starts by performing visual reasoning to align anonymous entities with fine-grained visual and contextual analysis. Subsequently, the entity-aligned commentary is refined with knowledge by incorporating external historical statistics and iteratively updated internal game state information. Consequently, <strong>GameSight improves the player alignment accuracy by 18.5% on SN-Caption-test-align dataset compared to Gemini 2.5-pro</strong>. Combined with further knowledge enhancement, <strong>GameSight outperforms in segment-level accuracy and commentary quality, as well as game-level contextual relevance and structural composition.</strong> We believe that our work paves the way for a more informative and engaging human-centric experience with the AI sports application. <strong>All source code required for conducting and analyzing the experiments will be made publicly available upon publication of the paper.</strong>         </p>
+            Soccer commentary plays a crucial role in enhancing the soccer game viewing experience for audiences. Previous studies in automatic soccer commentary generation typically adopt an end-to-end method to generate anonymous <i>live text commentary</i>. Such generated commentary is insufficient in the context of real-world <i>live televised commentary</i>, as it contains anonymous entities, context-dependent errors and lacks statistical insights of the game events.<strong>To bridge the gap, we propose GameSight, a two-stage model to address soccer commentary generation as a knowledge-enhanced visual reasoning task, enabling live-televised-like knowledgeable commentary with accurate reference to entities (players and teams).</strong> GameSight starts by performing visual reasoning to align anonymous entities with fine-grained visual and contextual analysis. Subsequently, the entity-aligned commentary is refined with knowledge by incorporating external historical statistics and iteratively updated internal game state information. Consequently, <strong>GameSight improves the player alignment accuracy by 18.5% on SN-Caption-test-align dataset compared to Gemini 2.5-pro</strong>. Combined with further knowledge enhancement, <strong>GameSight outperforms in segment-level accuracy and commentary quality, as well as game-level contextual relevance and structural composition.</strong> We believe that our work paves the way for a more informative and engaging human-centric experience with the AI sports application.         </p>
         </div>
       </div>
     </div>
